@@ -40,3 +40,22 @@ I changed the namespace in the data folder to match the library class.
 So I finally was able to build without problems! I had to change the Error.cshtml models name to reference my models class library. 
 I created a static class called SD.cs in the utility project. I then added project references for this to the main project, and also to the DataAccess class library. 
 I added a new area called "Customer" and changed the route pattern in startup.cs to reference the area.
+
+
+_________________________________________________________________________________________________________________________________________________________
+Starting up part 2 of the assignment.
+
+First thing I did was build the solution to make sure it was working. I kept getting only "4 up-to-date" rather than build succeeded, so I did rebuild and then build and it worked.
+I'm reviewing the appsettings.json file, and I changed the name of the database. 
+I used the NuGet package manager to add the migration. The migration file name is: 20211206223139_AddDefaultIdentityMigration
+I  updated the database with the "update-database" command in the PM console. 
+
+I added a new table to the database by creating the category model class. This class creates the table. 
+I added the migration but the new migration file was empty. To fix this I modified the ApplicationDbContext.cs file.
+I then deleted the old migration and migrated the new class again. Then I updated the database. 
+
+Now we need to create a repository. I created a new folder in the DataAccess project called Repository, then another folder called IRepository inside of that one.
+I added an interface type item called IRepository and modified it to be used for CRUD operations on the Category class.
+
+After added the CRUD elements to that interface above, I created a new class in the Repository folder called Repository.cs. I implemented the interface that I had made earlier with this class.
+Using the provided repository file, I filled in the CRUD methods. There were templates given to me after I interfaced the class.
