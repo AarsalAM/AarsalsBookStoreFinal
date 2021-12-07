@@ -41,7 +41,6 @@ So I finally was able to build without problems! I had to change the Error.cshtm
 I created a static class called SD.cs in the utility project. I then added project references for this to the main project, and also to the DataAccess class library. 
 I added a new area called "Customer" and changed the route pattern in startup.cs to reference the area.
 
-
 _________________________________________________________________________________________________________________________________________________________
 Starting up part 2 of the assignment.
 
@@ -69,3 +68,8 @@ After creating the interface, I used it to extend a new class, SP_Call.cs. I the
 I added a new interface, this time called IUnitOfWork to the IRepository folder. 
 I used that interface to build a new class UnitOfWork. I added code to make it accessible to the project in the Startup.cs file. 
 I was having errors with accessibility. I fixed this by setting both interface classes as public. 
+
+I added the CategoryController in the Admin area. This controller uses the IUnitOfWork interface. In the same Admin area, I created a new Index view. 
+I modified the generic index code with html given to me. I then both added the category menu item and then move it into the dropdown menu I had created before. 
+
+
