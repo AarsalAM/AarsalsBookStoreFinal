@@ -1,4 +1,5 @@
-
+using AarsalsBooksFinal.DataAccess.Repository;
+using AarsalsBooksFinal.DataAccess.Repository.IRepository;
 using AarsalsBookStoreFinal.DataAccess.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -35,6 +36,7 @@ namespace AarsalsBookStoreFinal
 
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews();
         }
 

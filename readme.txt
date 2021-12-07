@@ -59,3 +59,13 @@ I added an interface type item called IRepository and modified it to be used for
 
 After added the CRUD elements to that interface above, I created a new class in the Repository folder called Repository.cs. I implemented the interface that I had made earlier with this class.
 Using the provided repository file, I filled in the CRUD methods. There were templates given to me after I interfaced the class.
+I created a class and an interface class for the Category table specifically, though the interface class could also be used for other potential models. 
+I added the update method for this class.
+
+Created a new interface class called ISP_Call. This will be used to map multiple repositories in a Unit of Work. 
+I had to install the Dapper package to extend the IDisposable class and use its methods such as DynamicParameters. 
+After creating the interface, I used it to extend a new class, SP_Call.cs. I then populated the template created with the correct methods. 
+
+I added a new interface, this time called IUnitOfWork to the IRepository folder. 
+I used that interface to build a new class UnitOfWork. I added code to make it accessible to the project in the Startup.cs file. 
+I was having errors with accessibility. I fixed this by setting both interface classes as public. 
