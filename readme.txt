@@ -72,4 +72,27 @@ I was having errors with accessibility. I fixed this by setting both interface c
 I added the CategoryController in the Admin area. This controller uses the IUnitOfWork interface. In the same Admin area, I created a new Index view. 
 I modified the generic index code with html given to me. I then both added the category menu item and then move it into the dropdown menu I had created before. 
 
+To experiment with Font Awesome icons, I added them using element classes in the index file for category. I am now going to delete that and instead use the given javascript files.
+In these given javascript files, the same Font Awesome is used.
 
+I created an Upsert action result in the Category Controller. I also added an Upsert page as a view.
+I then created a partial view for both edit and back.
+
+I populated the Upsert.html and tested it. I then changed something on the page while the app was still running and refreshing the page showed my change of adding the title.
+I added a @section to validate the input.
+
+I created an Upsert POST action method in the Category Controller.
+I added a void save method to the category repository to add the save method. 
+I tested and was able to create and update categories without issue.
+
+I am now adding the delete functionality. 
+I added the delete API to the CategoryController.cs page. 
+
+I then created a delete function in the category.js script file. I added the onclick functionality in trhe file as well.
+As it was said not to work on MS edge, I changed the browser to chrome.
+I tested but the delete function was not working. Troubleshooting now.
+Was able to find the error. I was missing a closing parenthesis in the onclick delete event. As well as a space before the class declaration. 
+I had another error, the table would not auto reload when deleted. 
+This was caused by a typo in the word "success". I found it and fixed it, it now all works.
+
+This is the end of part 2.
