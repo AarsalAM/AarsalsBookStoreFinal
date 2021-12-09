@@ -123,3 +123,16 @@ I added Product to the repository, as well as created the IProductRepository int
 I remembered to put the correct using statements at the top.
 I implemented the interface I created, then updated the Update method for the Product class.
 
+I created a Product Controller in the Admin area. 
+I added the IWebHostEnvironment call.
+Added a Product ViewModel class and put it in the ViewModels folder.
+I had to install the Microsoft.AspNetCore.Mvc.ViewFeatures package to be able to use the <SelectListItem> part of the code.
+I added to the Product Controller and created the Upsert method. Though I have it commented out for now.
+I updated the API call to include the Category and CoverType properties. 
+I added a folder to the views area under admin, folder called Product. 
+Created the index page and changed the layout of the table. Created a new .js file as well with some modifications. 
+I added the page to the last open area in the drop down menu navbar.
+
+Finally, will be adding the Upsert.cs page.
+The code for the page was provided. I created an account at tiny.cloud and was given an API key. I added it to the scripting at the bottom.
+I used it to add a rich textbox to the textarea, as well as to validate input.
