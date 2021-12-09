@@ -96,3 +96,30 @@ I had another error, the table would not auto reload when deleted.
 This was caused by a typo in the word "success". I found it and fixed it, it now all works.
 
 This is the end of part 2.
+
+
+_________________________________________________________________________________________________________________________________________________________
+Assignment 2 - Part 3 (section 1)
+
+First thing to do is create Cover Type CRUD. I am to do this by following the exact same steps used to create Category CRUD previously. 
+I first created the CoverType.cs model, in the models folder. This one also has an ID and a Name.
+I then added the CoverType to the ApplicationDbContext.cs file, and then pushed a migration to the database.
+the name of the migration file is: 20211209160632_AddCoverTypeToDb.cs
+I update the database.
+I then created an interface and a class for the CoverType in the repository folders. 
+I added the appropriate code so that it replicates the Category model and interfaces. 
+I added the CoverType code into the UnitOfWork files as well
+When adding the code into the UnitOfWork file, I have a cast error. Troubleshooting that now.
+found it, had category instead of covertype when making a reference. 
+I added the cover type controller and views. I gave it CRUD functionality and created a new js file for it as well.
+The cover type page is working.
+
+So now we're working on a new page, the Products page. I created a Product.cs model with the provided code.
+I added the reference to the product page in the database, in the ApplicationDbContext.cs file.
+I then used the migration command. The Name of the file is: 20211209200459_addProductToDb
+I updated the product class to make Title, ISBN, and  Author required. I then created a new migration.
+20211209200659_addValidationToProduct.cs
+I added Product to the repository, as well as created the IProductRepository interface and class.
+I remembered to put the correct using statements at the top.
+I implemented the interface I created, then updated the Update method for the Product class.
+
