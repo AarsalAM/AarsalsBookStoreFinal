@@ -1,7 +1,7 @@
 ﻿Author: Aarsal Masoodi
 Date Created: November 1st, 2021
 
-Date Modified: November 3rd, 2021
+Date Modified: December 9th, 2021
 
 I created a project through Visual Studio 2019. It was through an ASP.NET Core Web App (Model-View-Controller) template.
 I explored the defaulty created Models, Views, and Controllers. 
@@ -136,3 +136,12 @@ I added the page to the last open area in the drop down menu navbar.
 Finally, will be adding the Upsert.cs page.
 The code for the page was provided. I created an account at tiny.cloud and was given an API key. I added it to the scripting at the bottom.
 I used it to add a rich textbox to the textarea, as well as to validate input.
+Wasn't able to get the uperset page working, turns out I had commented out the wrong part of the ProductController.
+I still need to press continue twice to get to the page.
+
+I completed the ProductController class. However I do have a few errors when submitting the product.
+I will be submitting the file as it is for now, as I've run out of time. I will keep working on this to get it without errors.
+
+Thank You,
+Aarsal Masoodi
+0688474
